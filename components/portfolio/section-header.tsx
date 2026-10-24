@@ -21,7 +21,7 @@ export function LongArrow({ className = '' }: { className?: string }) {
 export function EditorialBar() {
   return (
     <div className="flex items-center justify-between gap-4 border-b border-border pb-4 text-cream/70">
-      <span className="text-xs font-medium uppercase tracking-[0.25em]">Digital Marketing</span>
+      {/* <span className="text-xs font-medium uppercase tracking-[0.25em]">Digital Marketing</span> */}
       <LongArrow className="h-3 w-20 sm:w-32" />
     </div>
   )
