@@ -89,9 +89,8 @@ export function Brands() {
     <section id="brands" aria-labelledby="brands-title" className="mx-auto max-w-7xl px-5 py-24 md:px-8 md:py-32">
       <SectionHeader
         id="brands-title"
-        eyebrow="Brands I have worked on"
+        eyebrow="Recently I have worked on"
         title="Brand Portfolio"
-        intro="At Social Maadhyam I have worked across 6 brands and 7 Instagram pages, covering content planning, posting, page growth and performance tracking through Instagram Insights."
       />
       <div className="mt-16 flex flex-col gap-20 md:mt-24 md:gap-28">
         {brands.map((brand, i) => (
