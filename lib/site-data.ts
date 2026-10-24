@@ -156,7 +156,7 @@ export const organicLeads = [1, 2].map((n) => ({
 
 export const experience = [
   {
-    date: '[Start month year] to Present',
+    date: 'Nov 2025 to Present',
     role: 'Marketing Executive',
     company: 'Social Maadhyam, Delhi NCR',
     points: [
@@ -167,7 +167,7 @@ export const experience = [
     ],
   },
   {
-    date: '[Month year] to [Month year]',
+    date: 'Aug 2025 to Oct 2025',
     role: 'YouTube Marketing Intern',
     company: 'SharkMondo Digital',
     points: [
