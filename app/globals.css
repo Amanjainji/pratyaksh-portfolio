@@ -1,0 +1,90 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-anton), Impact, 'Arial Narrow', sans-serif;
+
+  --color-ink: #1e1c1a;
+  --color-ink-soft: #2a2724;
+  --color-sand: #e8dcc8;
+  --color-cream: #eadbc4;
+  --color-body: #cdbfa9;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+:root {
+  color-scheme: dark;
+  --radius: 0.75rem;
+  --background: #1e1c1a;
+  --foreground: #eadbc4;
+  --card: #e8dcc8;
+  --card-foreground: #1e1c1a;
+  --popover: #2a2724;
+  --popover-foreground: #eadbc4;
+  --primary: #eadbc4;
+  --primary-foreground: #1e1c1a;
+  --secondary: #2a2724;
+  --secondary-foreground: #eadbc4;
+  --muted: #2a2724;
+  --muted-foreground: #a99d8a;
+  --accent: #2a2724;
+  --accent-foreground: #eadbc4;
+  --destructive: #e5735c;
+  --border: rgba(234, 219, 196, 0.14);
+  --input: rgba(234, 219, 196, 0.22);
+  --ring: #eadbc4;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-padding-top: 5rem;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+  body {
+    @apply bg-background text-body font-sans;
+  }
+  ::selection {
+    background: #eadbc4;
+    color: #1e1c1a;
+  }
+}
+
+@utility text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1.5px #eadbc4;
+}
