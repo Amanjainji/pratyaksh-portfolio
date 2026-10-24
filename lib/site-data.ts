@@ -22,7 +22,7 @@ export const navLinks = [
   { href: '#about', label: 'About' },
   { href: '#brands', label: 'Brands' },
   { href: '#meta-ads', label: 'Meta Ads' },
-  { href: '#organic-leads', label: 'Organic Leads' },
+  // { href: '#organic-leads', label: 'Organic Leads' },
   { href: '#experience', label: 'Experience' },
   { href: '#contact', label: 'Contact' },
 ]
